@@ -1,0 +1,14 @@
+Author: Sean Zhang
+Date: 10/30/2017
+Sprint Number: 4
+File being Reviewed: RestrictedTempCamera.cs (reimplemented Camera.cs)
+Author of File: Hairuo Liu
+Minutes Taken: > 10
+
+Comments:
+There is absolutely no error in this class. In addition, I have run code analysis and there was no warning or message 
+generated from this class. It is proved that all variables and fields defined are used. The functions also have all 
+parameters useful. Therefore, the code has high cohesion.
+
+Hypothetical Change:
+If we make any change to the window size, then some values in the class (16*6 and 3100) also need to be updated.

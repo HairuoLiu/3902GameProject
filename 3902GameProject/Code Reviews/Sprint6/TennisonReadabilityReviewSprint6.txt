@@ -1,0 +1,13 @@
+﻿Author: Tennison Gray
+Date: 10/23/2017
+Sprint Number: 6
+File being Reviewed: GenericMarthSprite.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Comments:
+
+The code uses sensible names that follow c# naming convention as well as the the naming conventions we use in the other classes in the project. 
+For instance Frames and total frames represent exactly what they are named after. The same is true for method names, they follow c# convention 
+and make sense to the reader. Over all the code is very easy to follow and understand for someone new to the project. This class follows the convention 
+and style of our other Generic____.cs classes and thus is even easier for the group memebers to follow.

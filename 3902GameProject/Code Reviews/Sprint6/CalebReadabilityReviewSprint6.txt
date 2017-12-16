@@ -1,0 +1,11 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 12/5/2017
+Sprint 6
+Reviewed File: Mario.cs (Sean Zhang Edited)
+Author of File: Sean Zhang
+Minutes Taken: ~5
+
+Comments:
+Made edits to this file. This included refactoring to make it more readable. The variable names are all descriptive and easy
+to understand. All names follow the c# naming conventions. The flow of the code is easy to follow and understand the logic
+of how the program is working.

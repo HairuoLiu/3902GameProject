@@ -1,0 +1,15 @@
+Author: Sean Zhang
+Date: 12/05/2017
+Sprint Number: 6
+File being Reviewed: MainMenu.cs
+Author of File: Hairuo Liu
+Minutes Taken: > 10
+
+Comments:
+After running code analysis, it shows that no error, warning or message is generated from this class. On one way, it means that all 
+variables and fields defined are used. And in the functions, all parameters are used. The class also does not have any 
+superflous lines. Thus, the code has high cohesion. On the other way, it also has low coupling. Because no sign of dependency
+on other modules was found.
+
+Hypothetical Change:
+Sicne the class has low coupling, the changes of other classes will have almost no impact on it, so the class is reusable. 

@@ -1,0 +1,13 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 9/20/2017
+Sprint 2
+Reviewed File: LeftCrouchingSmallMarioState.cs
+Author of File: Sean Zhang
+Minutes Taken: ~10
+
+Comments:
+The file is written to be very readable. The class name, field names, and nearly all of the method names are all easily understood (ex: marioInstance is 
+the instance of mario assoiated with the state object) and follow the same naming conventions as the rest of the state classes.
+The method names CrouchToIdleToJump() and JumpToIdleToCrouch() can take a moment to understand. For example, JumpToIdleToCrouch() starts with the word "Jump",
+but makes mario crouch, generally speaking, which makes it take a second or two longer to read and understand. This is not a serious issue, but it may deserve
+renaming (in all of the state classes/interfaces). Finally, all of the method bodies are one or two lines and are easy to read and follow.

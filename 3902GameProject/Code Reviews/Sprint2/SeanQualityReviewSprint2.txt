@@ -1,0 +1,20 @@
+Author: Sean Zhang
+Date: 09/25/2017
+Sprint Number: 2
+File being Reviewed: WorldBackground.cs
+Author of File: Hairuo Liu
+Minutes Taken: >10
+
+Comments:
+
+The code has high quality. All variables defined are used. A problem of it may be the Update() function, because now it has no statement.
+However, player movement is not required in this sprite, and the whole class is a prepared base for upcoming sprints. Thus, we do not 
+need to add anything more in this sprint. Hence, the code has high cohesion.
+
+Hypothetical Change:
+
+(1) If we want to change the static background of the game, we just need to use another .png file. It means that we only have to load the 
+file needed in content, and then replace the old file name ("background") with the name of new file in the code. 
+
+(2) If we want the background to be updated with player`s movement, then both Draw() and Update() functions should be revised. The current
+code cannot easily support this change.

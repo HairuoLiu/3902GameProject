@@ -1,0 +1,17 @@
+﻿Author: Sean Zhang
+Date: 10/04/2017
+Sprint Number: 3
+File being Reviewed: GameXML.cs
+Author of File: Hairuo Liu
+Minutes Taken: <10
+
+Comments:
+
+The code has high readability. The author wrote the code by following C# capitalization convention. 
+First, this file has many the variable names, and all of them are in camelCase, like levelName and itemType. 
+Secondly, the file also has so many classes. And PascalCase is used for their names, for instance, BlockClass and 
+ItemClass. The naming is simple and easy for users to distinguish different classes. 
+Finally, there is no typos in the whole file, also there is no mistake like using "_" for private memebers. 
+In addition, although the class has plenty of variables and classes, it is still straightforward to recognize 
+specific object. 
+In my opnion, no change is needed.

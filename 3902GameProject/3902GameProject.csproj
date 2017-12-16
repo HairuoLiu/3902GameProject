@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70ACB57D-2606-4E80-B085-7B69366FD793}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_3902GameProject</RootNamespace>
+    <AssemblyName>3902GameProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Collision\CollisionDetector.cs" />
+    <Compile Include="Classes\Collision\CollisionGeneral.cs" />
+    <Compile Include="Classes\Collision\CollisionHandler.cs" />
+    <Compile Include="Classes\Collision\PortalCollision.cs" />
+    <Compile Include="Classes\Collision\SwordCollision.cs" />
+    <Compile Include="Classes\Collision\FireballCollision.cs" />
+    <Compile Include="Classes\Collision\ItemCollision.cs" />
+    <Compile Include="Classes\Collision\MarthCollision.cs" />
+    <Compile Include="Classes\Collision\MarioCollision.cs" />
+    <Compile Include="Classes\Collision\EnemyCollision.cs" />
+    <Compile Include="Classes\EnemySprites\GoombaSprites\FlippedGoomba.cs" />
+    <Compile Include="Classes\EnemySprites\GoombaSprites\GenericGoomba.cs" />
+    <Compile Include="Classes\EnemySprites\TurtleSprites\FlippedTurtle.cs" />
+    <Compile Include="Classes\EnemySprites\TurtleSprites\GenericTurtle.cs" />
+    <Compile Include="Classes\EnemyStates\GenericEnemyState.cs" />
+    <Compile Include="Classes\EnemyStates\GoombaStates\FlippedGoombaState.cs" />
+    <Compile Include="Classes\EnemyStates\GoombaStates\StompedGoombaState.cs" />
+    <Compile Include="Classes\EnemyStates\TurtleStates\DeadTurtleState.cs" />
+    <Compile Include="Classes\EnemyStates\TurtleStates\FlippedTurtleState.cs" />
+    <Compile Include="Classes\EnemyStates\TurtleStates\LeftWalkingTurtleState.cs" />
+    <Compile Include="Classes\EnemyStates\TurtleStates\RightWalkingTurtleState.cs" />
+    <Compile Include="Classes\EnemyStates\GoombaStates\RightWalkingGoombaState.cs" />
+    <Compile Include="Classes\EnemyStates\GoombaStates\LeftWalkingGoombaState.cs" />
+    <Compile Include="Classes\JuggleEnemy.cs" />
+    <Compile Include="Classes\MarthJuggleHeadsUp.cs" />
+    <Compile Include="Classes\MarthActionState.cs" />
+    <Compile Include="Classes\MarthSprites\LeftDamagingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightDamagingMarthSprite.cs" />
+    <Compile Include="Classes\MarthStates\LeftDeadMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftDamagingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightDeadMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightDamagingMarthState.cs" />
+    <Compile Include="Classes\NewGameStates\ControlsScreen.cs" />
+    <Compile Include="Classes\NewGameStates\PortalInstructionScreen.cs" />
+    <Compile Include="Classes\NewGameStates\MarthCastleWalking.cs" />
+    <Compile Include="Classes\NewGameStates\JuggleGameOver.cs" />
+    <Compile Include="Classes\NewGameStates\JuggleInstructionScreen.cs" />
+    <Compile Include="Classes\Portals\OrangeBall.cs" />
+    <Compile Include="Classes\Portals\BlueBall.cs" />
+    <Compile Include="Classes\Portals\PortalGunFlipped.cs" />
+    <Compile Include="Classes\Portals\PortalGun.cs" />
+    <Compile Include="Classes\Portals\GenericPortal.cs" />
+    <Compile Include="Classes\Portals\BluePortal.cs" />
+    <Compile Include="Classes\Portals\OrangePortal.cs" />
+    <Compile Include="Classes\Portals\PortalSpriteFactory.cs" />
+    <Compile Include="Classes\RightSword.cs" />
+    <Compile Include="Classes\LeftSword.cs" />
+    <Compile Include="Classes\Fireball.cs" />
+    <Compile Include="Classes\MarthSprites\RightSwingingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftSwingingMarthSprite.cs" />
+    <Compile Include="Classes\MarthStates\RightSwingingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftSwingingMarthState.cs" />
+    <Compile Include="Classes\MarioHeadsUp.cs" />
+    <Compile Include="Classes\Hitboxes.cs" />
+    <Compile Include="Classes\ItemData.cs" />
+    <Compile Include="Classes\Items\StaticCoin.cs" />
+    <Compile Include="Classes\Level.cs" />
+    <Compile Include="Classes\LevelLoader.cs" />
+    <Compile Include="Classes\Marth.cs" />
+    <Compile Include="Classes\MarthSprites\GenericMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftFallingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftJumpingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightCrouchingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftCrouchingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftIdleMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightFallingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightJumpingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightIdleMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\LeftWalkingMarthSprite.cs" />
+    <Compile Include="Classes\MarthSprites\RightWalkingMarthSprite.cs" />
+    <Compile Include="Classes\MarthStates\GenericLeftMarthState.cs" />
+    <Compile Include="Classes\MarthStates\GenericRightMarthState.cs" />
+    <Compile Include="Classes\MarthStates\GenericMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftWalkingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftCrouchingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftJumpingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftFallingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\LeftIdleMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightFallingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightJumpingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightIdleMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightCrouchingMarthState.cs" />
+    <Compile Include="Classes\MarthStates\RightWalkingMarthState.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\FinishLineSprite.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\FlagSprite.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\FlagPoleSprite.cs" />
+    <Compile Include="Classes\SystemSprites\UnrestrictedTempCamera.cs" />
+    <Compile Include="Classes\SystemSprites\YellowRectangle.cs" />
+    <Compile Include="Classes\UtilityClasses\ControllerUtility.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightFlagHoldingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\LeftBigDamageTransitionCrouchingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\LeftBigDamageTransitionIdleSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\LeftBigDamageTransitionJumpingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\LeftBigDamageTransitionWalkingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\RightBigDamageTransitionCrouchingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\RightBigDamageTransitionIdleSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\RightBigDamageTransitionJumpingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\BigDamageTransitionSprites\RightBigDamageTransitionWalkingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\LeftFireDamageTransitionCrouchingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\LeftFireDamageTransitionIdleSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\LeftFireDamageTransitionJumpingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\LeftFireDamageTransitionWalkingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\RightFireDamageTransitionCrouchingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\RightFireDamageTransitionIdleSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\RightFireDamageTransitionJumpingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\DamageTransitionSprites\FireDamageTransitionSprites\RightFireDamageTransitionWalkingSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightFlagHoldingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\BigToFireSprites\LeftBigToFireSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\BigToFireSprites\RightBigToFireSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\SmallToBigSprites\RightSmallToBigSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\SmallToBigSprites\LeftSmallToBigSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\SmallToFireSprites\LeftSmallToFireSprite.cs" />
+    <Compile Include="Classes\MarioSprites\PoweringUpSprites\SmallToFireSprites\RightSmallToFireSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightFlagHoldingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\RightFlagHoldingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\RightFlagHoldingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\RightFlagHoldingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\RightBigDamageTransitionJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\RightBigDamageTransitionWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\RightBigDamageTransitionCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\LeftBigDamageTransitionCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\LeftBigDamageTransitionIdleState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\GenericBigDamageTransitionState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\GenericFireDamageTransitionState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\LeftFireDamageTransitionCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\LeftFireDamageTransitionIdleState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\LeftFireDamageTransitionJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\LeftFireDamageTransitionWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\RightFireDamageTransitionCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\RightFireDamageTransitionIdleState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\RightFireDamageTransitionJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\FireDamageTransitionStates\RightFireDamageTransitionWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\GenericDamageTransitionState.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\LeftTurningFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\LeftBigDamageTransitionJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\LeftBigDamageTransitionWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\DamageTransitionStates\BigDamageTransitionStates\RightBigDamageTransitionIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\GenericBigToFireState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\LeftBigToFireCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\LeftBigToFireIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\LeftBigToFireJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\LeftBigToFireWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\RightBigToFireCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\RightBigToFireIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\RightBigToFireJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\BigToFire\RightBigToFireWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\GenericPowerUpState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\GenericSmallToBigState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\RightSmallToBigCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\LeftSmallToBigCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\RightSmallToBigIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\LeftSmallToBigIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\RightSmallToBigJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\LeftSmallToBigJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\RightSmallToBigWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToBig\LeftSmallToBigWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\GenericSmallToFireState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\LeftSmallToFireCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\LeftSmallToFireIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\LeftSmallToFireJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\LeftSmallToFireWalkingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\RightSmallToFireCrouchingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\RightSmallToFireIdleState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\RightSmallToFireJumpingState.cs" />
+    <Compile Include="Classes\MarioStates\PowerUpTransitionStates\SmallToFire\RightSmallToFireWalkingState.cs" />
+    <Compile Include="Classes\NewGameStates\CastleWalking.cs" />
+    <Compile Include="Classes\NewGameStates\FlagSliding.cs" />
+    <Compile Include="Classes\NewGameStates\ExitingPipeUp.cs" />
+    <Compile Include="Classes\NewGameStates\EnteringPipeToRight.cs" />
+    <Compile Include="Classes\NewGameStates\EnteringPipeDown.cs" />
+    <Compile Include="Classes\NewGameStates\Dying.cs" />
+    <Compile Include="Classes\NewGameStates\MainMenu.cs" />
+    <Compile Include="Classes\NewGameStates\Victory.cs" />
+    <Compile Include="Classes\NewGameStates\GameOver.cs" />
+    <Compile Include="Classes\NewGameStates\TransitioningLifeScreen.cs" />
+    <Compile Include="Classes\NewGameStates\Playing.cs" />
+    <Compile Include="Classes\ObjectPhysics.cs" />
+    <Compile Include="Classes\MarioActionState.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftThrowingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightThrowingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\LeftThrowingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\AuxillaryMarioStates\RightThrowingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\GenericBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\GenericLeftBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\GenericRightBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\GenericFireMarioStatecs.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\GenericLeftFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\GenericRightFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\GenericMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\GenericLeftSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\GenericRightSmallMario.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\GenericSmallMarioState.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\DarkBrickBit.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\BrickBit.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\DarkBrickBlock.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\DarkGroundBlock.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\MultiHitBrickBlock.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\CastleSprite.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\FlagIdleSprites.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\Flag4StepAnimationSprites.cs" />
+    <Compile Include="Classes\SceneSprites\Misc Sprites\GenericScenery.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\GenericHorPipe.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\LeftPipePiece.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\HorPipe.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\RightPipePiece.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\LeftPipeTop.cs" />
+    <Compile Include="Classes\Score.cs" />
+    <Compile Include="Classes\StarMario.cs" />
+    <Compile Include="Classes\CSVLevelLoader.cs" />
+    <Compile Include="Classes\SystemSprites\BackgroundFactory.cs" />
+    <Compile Include="Classes\SystemSprites\FontFactory.cs" />
+    <Compile Include="Classes\SystemSprites\RestrictedTempCamera.cs" />
+    <Compile Include="Classes\SystemSprites\Sound.cs" />
+    <Compile Include="Classes\SystemSprites\SoundControl.cs" />
+    <Compile Include="Classes\SystemSprites\MenuBackground.cs" />
+    <Compile Include="Classes\SystemSprites\WorldBackground.cs" />
+    <Compile Include="Classes\SystemSprites\WorldMusic.cs" />
+    <Compile Include="Classes\Turtle.cs" />
+    <Compile Include="Classes\Goomba.cs" />
+    <Compile Include="Classes\Items\BigMushroom.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSpriteFactory.cs" />
+    <Compile Include="Classes\MarioSprites\GenericShortMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\GenericTallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\LeftCrouchingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftCrouchingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\LeftCrouchingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftIdleFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftJumpingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftRunningFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\LeftWalkingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightCrouchingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightCrouchingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightCrouchingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightIdleFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightJumpingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightRunningFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\FireMarioSprites\RightWalkingFireMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightWalkingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\LeftWalkingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightRunningBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\LeftRunningBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightJumpingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\LeftJumpingBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\RightIdleBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\BigMarioSprites\LeftIdleBigMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\LeftCrouchingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\LeftIdleBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\LeftCrouchingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\RightCrouchingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\RightCrouchingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\LeftCrouchingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\LeftIdleFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\LeftJumpingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\LeftJumpingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\LeftRunningBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\LeftRunningFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\LeftWalkingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\LeftWalkingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\RightCrouchingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\RightIdleBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\RightIdleFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\RightJumpingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\RightJumpingFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\RightRunningBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\RightRunningFireMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryBigMarioStates\RightWalkingBigMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimaryFireMarioStates\RightWalkingFireMarioState.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\BrickBlock.cs" />
+    <Compile Include="Classes\Items\Coin.cs" />
+    <Compile Include="Classes\EnemySprites\GoombaSprites\StompedGoomba.cs" />
+    <Compile Include="Classes\EnemySprites\TurtleSprites\DeadTurtle.cs" />
+    <Compile Include="Classes\MarioSprites\DeadMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\DeadMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\LeftJumpingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\LeftRunningSmallMarioState.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\LeftJumpingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\LeftRunningSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\LeftWalkingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\LeftWalkingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightRunningSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightJumpingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\RightJumpingSmallMarioState.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\RightRunningSmallMarioState.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightWalkingSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\RightWalkingSmallMarioState.cs" />
+    <Compile Include="Classes\Items\GenericItem.cs" />
+    <Compile Include="Classes\EnemySprites\EnemySpriteFactory.cs" />
+    <Compile Include="Classes\Items\FireFlower.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\GenericBlock.cs" />
+    <Compile Include="Classes\EnemySprites\GenericEnemy.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\GenericPipe.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\GroundBlock.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\HiddenBlock.cs" />
+    <Compile Include="Classes\Items\ItemSpriteFactory.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\LeftIdleSmallMarioState.cs" />
+    <Compile Include="Classes\MarioSprites\GenericMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\LeftIdleSmallMarioSprite.cs" />
+    <Compile Include="Classes\MarioSprites\SmallMarioSprites\RightIdleSmallMarioSprite.cs" />
+    <Compile Include="Classes\Mario.cs" />
+    <Compile Include="Classes\UtilityClasses\PlayerSpriteFactory.cs" />
+    <Compile Include="Classes\MarioStates\PrimarySmallMarioStates\RightIdleSmallMarioState.cs" />
+    <Compile Include="Classes\EnemySprites\TurtleSprites\RightTurtle.cs" />
+    <Compile Include="Classes\Items\LifeMushroom.cs" />
+    <Compile Include="Classes\SceneSprites\SceneSpriteFactory.cs" />
+    <Compile Include="Classes\UtilityClasses\StringConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\CollisionUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\MarioUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\GoombaUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\FireballUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\MiscUtilityClass.cs" />
+    <Compile Include="Classes\UtilityClasses\SystemUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\SceneUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\SpriteUtilityConsts.cs" />
+    <Compile Include="Classes\UtilityClasses\TurtleUtilityClass.cs" />
+    <Compile Include="Commands\EnterControlsScreenCommand.cs" />
+    <Compile Include="Commands\RaiseScaleCommand.cs" />
+    <Compile Include="Commands\LowerScaleCommand.cs" />
+    <Compile Include="Commands\EnterMarioPortalGameCommand.cs" />
+    <Compile Include="Commands\EnterMarthNormalGameCommand.cs" />
+    <Compile Include="Commands\EnterMarthJuggleGameCommand.cs" />
+    <Compile Include="Commands\KillPlayerCommand.cs" />
+    <Compile Include="Commands\EnterMarioNormalGameCommand.cs" />
+    <Compile Include="Commands\MakeMarioShootBPortalCommand.cs" />
+    <Compile Include="Commands\MakeMarioShootOPortalCommand.cs" />
+    <Compile Include="Commands\MakeMarthSwingCommand.cs" />
+    <Compile Include="Commands\MakePlayerEndJumpCommand.cs" />
+    <Compile Include="Commands\MakePlayerContinueJumpCommand.cs" />
+    <Compile Include="Commands\MakePlayerCrouchCommand.cs" />
+    <Compile Include="Commands\MakePlayerJumpCommand.cs" />
+    <Compile Include="Commands\MakeMarioRunCommand.cs" />
+    <Compile Include="Commands\MakeMarioShootFireCommand.cs" />
+    <Compile Include="Commands\MakePlayerStandCommand.cs" />
+    <Compile Include="Commands\MakeMarioStopRunCommand.cs" />
+    <Compile Include="Commands\MovePlayerLeftCommand.cs" />
+    <Compile Include="Commands\MovePlayerRightCommand.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\QuestionBlock.cs" />
+    <Compile Include="Commands\PauseResumeCommand.cs" />
+    <Compile Include="Commands\QuitCommand.cs" />
+    <Compile Include="Commands\ResetCommand.cs" />
+    <Compile Include="Classes\SceneSprites\PipeSprites\RightPipeTop.cs" />
+    <Compile Include="Classes\Items\SuperStar.cs" />
+    <Compile Include="Classes\SceneSprites\BlockSprites\StoneBlock.cs" />
+    <Compile Include="Classes\EnemySprites\TurtleSprites\LeftTurtle.cs" />
+    <Compile Include="Classes\EnemySprites\GoombaSprites\WalkingGoomba.cs" />
+    <Compile Include="Commands\ToggleFullScreenCommand.cs" />
+    <Compile Include="Controllers\GamepadController.cs" />
+    <Compile Include="Controllers\ThumbstickDirection.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Interfaces\ICamera.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\IEnemy.cs" />
+    <Compile Include="Interfaces\IEnemyState.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IGameState.cs" />
+    <Compile Include="Interfaces\IItem.cs" />
+    <Compile Include="Interfaces\ILevel.cs" />
+    <Compile Include="Interfaces\IMarthState.cs" />
+    <Compile Include="Interfaces\IMarth.cs" />
+    <Compile Include="Interfaces\IMario.cs" />
+    <Compile Include="Interfaces\IMarioState.cs" />
+    <Compile Include="Interfaces\IHeadsUp.cs" />
+    <Compile Include="Interfaces\IObjectPhysics.cs" />
+    <Compile Include="Interfaces\IPipe.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Interfaces\IPortal.cs" />
+    <Compile Include="Interfaces\IScenery.cs" />
+    <Compile Include="Interfaces\IScore.cs" />
+    <Compile Include="Interfaces\IState.cs" />
+    <Compile Include="Interfaces\ISword.cs" />
+    <Compile Include="Interfaces\IWeapon.cs" />
+    <Compile Include="Interfaces\ISprite.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Code Reviews\Sprint2\CalebReadabilityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\HairuoLiuQualityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\HairuoLiuReadabilityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\SeanQualityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\SeanReadabilityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\TennisonQualityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint3\CalebQualityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\HairuoLiuQualityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\SeanQualityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\SeanReadabilityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\CalebReadabilityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\HairuoLiuReadabilityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\TennisonQualityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint3\TennisonReadabilityReviewSprint3.txt" />
+    <Content Include="Code Reviews\Sprint2\TennisonReadabilityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint2\CalebQualityReviewSprint2.txt" />
+    <Content Include="Code Reviews\Sprint4\CalebReadabilityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\HairuoLiuReadabilityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\HairuoQualityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\SeanQualityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\SeanReadabilityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\CalebQualityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\TennisonQualityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint4\TennisonReadabilityReviewSprint4.txt" />
+    <Content Include="Code Reviews\Sprint5\CalebQualityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\CalebReadabilityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\HairuoLiuQualityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\HairuoLiuReadabilityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\SeanQualityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\SeanReadabilityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\TennisonQualityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint5\TennisonReadabilityReviewSprint5.txt" />
+    <Content Include="Code Reviews\Sprint6\CalebQualityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\CalebReadabilityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\HairuoLiuQualityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\HairuoLiuReadabilityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\SeanQualityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\SeanReadabilityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\TennisonQualityReviewSprint6.txt" />
+    <Content Include="Code Reviews\Sprint6\TennisonReadabilityReviewSprint6.txt" />
+    <Content Include="Content\background.png" />
+    <Content Include="Content\Background\background.png" />
+    <Content Include="Content\Background\controls.png" />
+    <Content Include="Content\Background\gameover.png" />
+    <Content Include="Content\Background\juggleinstructions.png" />
+    <Content Include="Content\Background\menu.png" />
+    <Content Include="Content\Background\portalinstructions.png" />
+    <Content Include="Content\Background\victory.png" />
+    <Content Include="Content\blockSpritesheet.png" />
+    <Content Include="Content\enemySpriteSheet.png" />
+    <Content Include="Content\itemSpriteSheet.png" />
+    <Content Include="Content\mariobg.png" />
+    <Content Include="Content\marioSpritesheetTemp.png" />
+    <Content Include="Content\MarthSpriteSheet.png" />
+    <Content Include="Content\Music\Level1.mp3" />
+    <Content Include="Content\Music\Level\01-main-theme-overworld.mp3" />
+    <Content Include="Content\Music\Level\02-underworld.mp3" />
+    <Content Include="Content\Music\Level\03-underwater.mp3" />
+    <Content Include="Content\Music\Level\04-castle.mp3" />
+    <Content Include="Content\Music\Level\05-starman.mp3" />
+    <Content Include="Content\Music\Level\06-level-complete.mp3" />
+    <Content Include="Content\Music\Level\07-castle-complete.mp3" />
+    <Content Include="Content\Music\Level\08-you-re-dead.mp3" />
+    <Content Include="Content\Music\Level\09-game-over.mp3" />
+    <Content Include="Content\Music\Level\10-game-over-2.mp3" />
+    <Content Include="Content\Music\Level\11-into-the-tunnel.mp3" />
+    <Content Include="Content\Music\Level\12-ending.mp3" />
+    <Content Include="Content\Music\Level\13-hurry.mp3" />
+    <Content Include="Content\Music\Level\14-hurry-underground-.mp3" />
+    <Content Include="Content\Music\Level\15-hurry-underwater-.mp3" />
+    <Content Include="Content\Music\Level\16-hurry-castle-.mp3" />
+    <Content Include="Content\Music\Level\17-hurry-starman-.mp3" />
+    <Content Include="Content\Music\Level\18-hurry-overworld-.mp3" />
+    <Content Include="Content\Music\smb_1-up.wav" />
+    <Content Include="Content\Music\smb_bowserfall.wav" />
+    <Content Include="Content\Music\smb_bowserfire.wav" />
+    <Content Include="Content\Music\smb_breakblock.wav" />
+    <Content Include="Content\Music\smb_bump.wav" />
+    <Content Include="Content\Music\smb_coin.wav" />
+    <Content Include="Content\Music\smb_fireball.wav" />
+    <Content Include="Content\Music\smb_fireworks.wav" />
+    <Content Include="Content\Music\smb_flagpole.wav" />
+    <Content Include="Content\Music\smb_gameover.wav" />
+    <Content Include="Content\Music\smb_jump-super.wav" />
+    <Content Include="Content\Music\smb_jumpsmall.wav" />
+    <Content Include="Content\Music\smb_kick.wav" />
+    <Content Include="Content\Music\smb_mariodie.wav" />
+    <Content Include="Content\Music\smb_pause.wav" />
+    <Content Include="Content\Music\smb_pipe.wav" />
+    <Content Include="Content\Music\smb_powerup.wav" />
+    <Content Include="Content\Music\smb_powerup_appears.wav" />
+    <Content Include="Content\Music\smb_score.wav" />
+    <Content Include="Content\Music\smb_stage_clear.wav" />
+    <Content Include="Content\Music\smb_stomp.wav" />
+    <Content Include="Content\Music\smb_vine.wav" />
+    <Content Include="Content\Music\smb_warning.wav" />
+    <Content Include="Content\Music\smb_world_clear.wav" />
+    <Content Include="Content\portalSprite.png" />
+    <Content Include="Content\scenery.png" />
+    <Content Include="Content\SwordSpriteSheet.png" />
+    <Content Include="Icon.ico" />
+    <Content Include="READMES\Sprint2README.txt" />
+    <Content Include="READMES\Sprint4README.txt" />
+    <Content Include="READMES\Sprint3README.txt" />
+    <Content Include="READMES\Sprint5README.txt" />
+    <Content Include="READMES\Sprint6README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Content\Level1World1.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\Font.spritefont" />
+    <None Include="Content\Font2.spritefont" />
+    <None Include="Content\Font\Menu.spritefont" />
+    <Content Include="Content\JuggleLevelMarth.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1World1Marth.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\PortalLevel.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_3902GameProject\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

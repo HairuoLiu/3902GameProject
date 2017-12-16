@@ -1,0 +1,18 @@
+﻿Author: Caleb Lehman
+Date: 10/30/2017
+Sprint Number: 4
+File being Reviewed: GenericItem.cs
+Author of File: Sean Zhang edited
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code is of high quality. The only major dependency is on the ItemInfo class, which is an auxillary class that stores information about the position/movement
+of the item, so the code has relatively low coupiling. The code also deals strictly with items. In theory, the different aspects of the item could be refactored into
+different classes, but they are so simple that I think it's okay to all have in one class and still have high cohesion.
+
+Hypothetical Change:
+
+It would be preferable to have all objects use the same class/interface for physics objects (instead of the item class having ItemInfo, mario having Object Physics,
+enemies have no external class). To make this change for GenericItem would involve editing the lines which use ItemInfo to use some other class, and there are only
+~6 such lines, so the change would not be very difficult to make.

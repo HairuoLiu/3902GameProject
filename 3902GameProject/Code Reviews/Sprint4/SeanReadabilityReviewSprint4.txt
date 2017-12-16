@@ -1,0 +1,17 @@
+﻿Author: Sean Zhang
+Date: 10/23/2017
+Sprint Number: 4
+File being Reviewed: Cmaera.cs
+Author of File: Hairuo Liu
+Minutes Taken: <10
+
+Comments:
+
+The code follows C# capitalization convention well, so its readability is high. 
+First, all variable names in the file are in camelCase, for example, position. 
+Secondly, PascalCase is used for class and class member names, for instance, Transform and Zoom. The names are simple and 
+easy for users to know their functions. 
+Finally, there is no typos and mistakes like using "_" for private memebers. 
+In addition, the class is straightforward for people to recognize.
+In my opnion, somethings can be changed in future: right now there are many comments in the code, they will be improved and
+added to the final code at the end of sprint 4.

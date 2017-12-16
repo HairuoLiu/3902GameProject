@@ -1,0 +1,21 @@
+﻿Author: Tennison Gray
+Date: 10/4/2017
+Sprint Number: 5
+File being Reviewed: Score.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are not many superflous lines, are unneeding variabales.
+The initial problem I first viewed when reviewing this is that since it uses so many magic numbers it can be 
+hard to read and follow since so many of the values are obtained from a utility class. However, this does mean 
+the code is easy to modify value wise should the need arise.
+
+Hypothetical Change:
+
+Say we wanted to add more ways of modyfiying the score, such as a second player. Then we would need just a 
+second copy of this class, since the way it is built it pulls its initial values from a utility file and then 
+modifies them as need be. This means we could keep track of any number of players with ease. However, say we 
+wanted to add more functionality, such as new items that added to your score, or ways that would detract. This 
+can also be done very easily since the way methods are created in the class and the way score is modified are not hard at all.

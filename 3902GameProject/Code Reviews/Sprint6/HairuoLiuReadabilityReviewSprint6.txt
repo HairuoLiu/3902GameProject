@@ -1,0 +1,14 @@
+Author: HairuoLiu
+Date: 12/5/2017
+Sprint 6
+Reviewed File: PortalCollision.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Comments:
+
+The code uses sensible names that follow c# naming convention as well as the the naming conventions 
+we use in the other classes in the project. The “PortalSpriteFactory.Instance.CreateBluePortal” method 
+is long but is not hard to understand how it works. And they follow c# convention and make sense to the reader. 
+The List<IGameObject> temp is not so clear the meaning for it. Maybe name like List<IGameObject> collisionsTemp 
+is better than only Temp;

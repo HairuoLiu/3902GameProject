@@ -1,0 +1,12 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 11/8/2017
+Sprint 5
+Reviewed File: HeadsUp.cs
+Author of File: Sean Zhang
+Minutes Taken: ~5
+
+Comments:
+The file is fairly short, so there is not too much code as to make it unreadable. The variable names are easily understandable (ex: headsUpFont is the font
+for the heads up display). Some of the lines of code in the sprite drawing are difficult to understand at first (ex: "new Vector2(camera.XPosition + 110, 10)"),
+but it is clear that once magic numbers are refactored out, it will be easier to read (ex: "new Vector2(baseXPosition + pointXOffset, baseYPosition)"). Overall,
+the code is readable, but should be refactored more to make the purpose of certain values more clear.

@@ -1,0 +1,17 @@
+﻿Author: HairuoLiu
+Date: 11/08/2017
+Sprint 5
+Reviewed File: GenericHorPipe.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Comments:
+
+The code uses sensible names. 
+This code follows C# capitalization convention strictly,
+and there is no doubt that it has high readability. 
+All of the lines of code in the sprite drawing are easy to understand. 
+For example the "public void Enter()". 
+Everyone know that is the enter function. 
+There one small problem which is the value name "Psg". 
+If there other people read the file and may not understand what this mean.

@@ -1,0 +1,15 @@
+Author: Sean Zhang
+Date: 10/09/2017
+Sprint Number: 3
+File being Reviewed: LevelLoader.cs (reimplemented GameXML.cs)
+Author of File: Hairuo Liu
+Minutes Taken: >15
+
+Comments:
+
+I ran code analysis and there was no warning or error from this class: all variables and fields defined are used. Also, I found that all lines are useful in this sprint. At last, the code has high cohesion.
+
+Hypothetical Change:
+Right now we have a designed file, which has all objects appear at the right positions. But if we load from other available files, depending on the file contents, there can be 2 cases:
+1. Some of the objects are not shown.
+2. Objects are at different positions from current ones.

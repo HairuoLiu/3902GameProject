@@ -1,0 +1,11 @@
+Author: HairuoLiu
+Date: 9/20/2017
+Sprint Number: 2
+File being Reviewed: ItemSpriteFactory.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Comments:
+First,I can read code with virtually any convention, no problem. I think is also easy understand and follow if other people read the project. 
+Next, the name of the code uses sensible names thich follow c# naming convention. 
+Then, The name like CreateStar(), CreateFireFlower(),CreateCoin() are clear also the value name like itemSpriteSheet everyone can read it.

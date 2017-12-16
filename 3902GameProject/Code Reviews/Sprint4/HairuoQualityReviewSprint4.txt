@@ -1,0 +1,14 @@
+﻿Author: HairuoLiu
+Date: 10/4/2017
+Sprint Number: 4
+File being Reviewed: EnemyCollision.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+In this file every thing was clean. The only problem I think is change the name of “marioMovingDown”, “isToLeftOfMario” will make variable look easier than now. Because “marioMovingDown” is so long, change the name to “marioMovDown” other programmer will still understand.  As for “isToLeftOfMario” we can change “isMarioRight” which have only three word mean the same thing.
+
+Hypothetical Change:
+
+If we want to add different physics collision such as different block. When enemy hit the block it will jump. The EnemyHitsBouncingBlock class maybe need add another value like IBlock to analysis the block and also need another if else statement to let it jump which may not need to use enemy.MakeFlipped method.

@@ -1,0 +1,18 @@
+﻿Author: Tennison Gray
+Date: 10/4/2017
+Sprint Number: 6
+File being Reviewed: GenericMarthSprite.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are not many superflous lines, are unneeding variabales.
+The initial problem I first viewed when reviewing this is that since it uses so many protected variables, if for any reason we would need
+this information it would be a pain to access. Luckily we do not but if the game were to grow more this could pose a problem.
+
+Hypothetical Change:
+
+Say we wanted to add more decorators to the marth character such that they would need to access this values from marth as well, since they
+are protected we could run into issues, this could be fixed however by expanded the interface for marth such that the decorators (super marth?)
+would be able to access all needed values for any future changes.

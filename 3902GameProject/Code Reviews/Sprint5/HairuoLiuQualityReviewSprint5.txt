@@ -1,0 +1,16 @@
+﻿Author: HairuoLiu
+Date: 11/13/2017
+Sprint Number: 5
+File being Reviewed: GenericHorPipe.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+There are not many superflous lines and the code is clean really easy to understand.
+The code uses sensible names. Everyone know that is the enter function. Everyone know that is the enter function. There are two Draw but I think the value is different so is fine.
+
+
+Hypothetical Change:
+
+If we only build some small game. The mothed like Draw() will work fine. But if there are lot of Pipe and different room to going. There will be some problem. If we want to build some big game in the future. we may not build two Draw which may make complier have some invisible problem.

@@ -1,0 +1,15 @@
+﻿Author: Sean Zhang
+Date: 12/05/2017
+Sprint Number: 6
+File being Reviewed: MainMenu.cs
+Author of File: Hairuo Liu
+Minutes Taken: <10
+
+Comments:
+
+All contents of the code follow C# capitalization convention, which makes the high readability of it. 
+Firstly, all variable names are in camelCase, like the int variable menuWidthBase. 
+Secondly, class and class member names are in PascalCase, such as MainMenu, so users can easily understand the 
+functions. 
+Finally, there is no typos or mistakes like using "_" for private memebers. 
+In conclusion, the class is straightforward for users to read, and nothiing needs to be changed.

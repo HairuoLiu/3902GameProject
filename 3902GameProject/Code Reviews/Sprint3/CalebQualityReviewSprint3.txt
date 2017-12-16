@@ -1,0 +1,19 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 10/9/2017
+Sprint 3
+Reviewed File: StarMario.cs
+Author of File: Sean Zhang
+Minutes Taken: ~10
+
+Comments on Code Quality:
+The code quality is high. All of the methods in the class have to do with abilities of mario (make big, move, damage, etc.), so I would say
+the cohesion is fairly high. The only strong dependency of the class is on the IMario interface (since the constructor is passed an object implementing IMario
+and because the star mario class itself implements IMario) and there is only a small dependency on the Game1 class (since the RemoveStar() method relies on the
+existence of a Mario property of the Game1 class). Overall, I would say that the coupling is fairly low. The code is a little long, but it is typically just
+calling corresponding methods on the passed IMario object, so it all makes sense and is simple.
+
+Hypothetical Change:
+We may want to change another aspect of mario, such as his state transitions or sprites. Since star mario was implemented as a decorator on top of an IMario
+object, it is independent of aspects of mario like his state transitions or sprites, making changes to those easier.
+We may also want to change the duration of the star effect or the corresponding graphical effects. The parameters controlling these are easily located in the
+StarMario code (starTimer, flashingColors, flashDelayCounter, etc.), so these changes would also be fairly straightforward.

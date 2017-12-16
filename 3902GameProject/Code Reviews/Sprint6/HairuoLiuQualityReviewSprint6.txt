@@ -1,0 +1,21 @@
+Author: HairuoLiu
+Date: 12/5/2017
+Sprint Number: 6
+File being Reviewed: PortalCollision.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are not many superfluous lines.
+The OrangeBall and the BlueBall in the first viewed when reviewing. Problem work for the future staff. 
+So actually we did not use that. Also I find “foreach (IGameObject o in temp)” the o in may also make people hard to understand.
+I think we need to change that.
+
+Hypothetical Change:
+Over all the code is very easy to follow and understand for someone new to the project.
+Everything work well but there some really long method such as “Game1.GameInstance.GameLevel.StaticObjects.Add”,
+ “Game1.GameInstance.GameLevel.MovingObjects.Remove”, “PortalSpriteFactory.Instance.CreateOrangePortal”. 
+If we build the bigger game we should load game object so the we did not need to use the “Game1.GameInstance”. 
+And if the “OrangeBall” and the “BlueBall” level build I think their will be more option like the ball hit the enemy. 
+We can also add the clip and so on in the future.

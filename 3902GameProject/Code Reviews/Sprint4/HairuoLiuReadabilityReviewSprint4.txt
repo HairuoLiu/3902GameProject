@@ -1,0 +1,9 @@
+﻿Author: HairuoLiu
+Date: 10/23/2017
+Sprint 4
+Reviewed File: EnemyCollision.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Comments:
+EnemyCollision had function like EnemyHitsBlock had the vales 'enemy' for enemy and 'dir' for collisiondirection and 'block' for block. In this function every thing was easy to understand like block.BoundingRectangle().X < enemy.XPosition use to compare the enemy X position. As for readability dir in the function may need to use more letter word or full name in the future. All the other is great.

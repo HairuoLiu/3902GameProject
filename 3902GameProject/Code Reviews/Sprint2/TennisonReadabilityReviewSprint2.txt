@@ -1,0 +1,13 @@
+﻿Author: Tennison Gray
+Date: 9/20/2017
+Sprint Number: 2
+File being Reviewed: GenericMarioSprite.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Comments:
+
+The code uses sensible names that follow c# naming convention as well as the the naming conventions we use in the other classes in the project. 
+For instance drawWidth is used in all classes that require a width for a sprite. The same is true for method names, they follow c# convention and make sense
+to the reader. Over all the code is very easy to follow and understand for someone new to the project. One very small change could be with the variable frame.
+Changing the name to currFrame would make it more readable to a new person on the project as that frame is the current one being used.

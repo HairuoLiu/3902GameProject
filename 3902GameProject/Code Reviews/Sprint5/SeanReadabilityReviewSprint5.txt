@@ -1,0 +1,15 @@
+﻿Author: Sean Zhang
+Date: 11/08/2017
+Sprint Number: 5
+File being Reviewed: SoundControl.cs
+Author of File: Hairuo Liu
+Minutes Taken: <10
+
+Comments:
+
+The code follows C# capitalization convention strictly, so there is no doubt that it has high readability. 
+At first, all variable names in the file are in camelCase, like the boolean variable muted. 
+Secondly, class and class member names are in PascalCase, such as PlaySoundEffect. And it is easy for users to understand the functions. 
+At last, there is no typos and mistakes like using "_" for private memebers. 
+What`s more, the class is straightforward for people to read.
+In my opnion, there is almost nothing need to be changed in future.

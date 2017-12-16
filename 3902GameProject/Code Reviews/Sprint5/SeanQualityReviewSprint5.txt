@@ -1,0 +1,16 @@
+Author: Sean Zhang
+Date: 11/13/2017
+Sprint Number: 5
+File being Reviewed: SoundControl.cs
+Author of File: Hairuo Liu
+Minutes Taken: > 10
+
+Comments:
+After running code analysis, it shows that no error, warning or message is generated from this class. Also it does not have 
+any superflous lines. Thus, all variables and fields defined are used. And in the functions, all parameters are used. 
+Therefore, the code has high cohesion. In addition, it also has low coupling. Because I have not found any sign of 
+dependency on other modules. This class once had warnings like CA1026, but it has been fixed latter.
+
+Hypothetical Change:
+The class is totally reusable now. However, there are some code, fields and methods not used now, like ToggleMute(). They 
+will be improved in Sprint 6, to make the player control the volume, but all requirements in Sprint 5 are met now.

@@ -1,0 +1,15 @@
+Author: Sean Zhang
+Date: 09/20/2017
+Sprint Number: 2
+File being Reviewed: WorldBackground.cs
+Author of File: Hairuo Liu
+Minutes Taken: <10
+
+Comments:
+
+The code is clear enough for me to read. Because it strictly follows C# capitalization convention. 
+First, camelCase is used for the variable names and class members, such as spriteSheetImageWidth. 
+Secondly, PascalCase is also used for the other names, for instance, WorldBackground. 
+Finally, there is no mistake like using "_" for private memebers. 
+In addition, all the names are meaningful. 
+In my opnion, no change is needed.

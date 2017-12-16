@@ -1,0 +1,11 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 10/23/2017
+Sprint 4
+Reviewed File: GenericItem.cs
+Author of File: Sean Zhang edited
+Minutes Taken: ~5
+
+Comments:
+GenericItem had XVelocity, YVelocity, etc. (movement variables). The variables are sensibly named (XVelocity is the x-component velocity). In the future,
+we could change this to use an instance of the same physics class that mario uses, but the readability is good. The are a lot of fields though, and this
+should probably be reduced in refactoring.

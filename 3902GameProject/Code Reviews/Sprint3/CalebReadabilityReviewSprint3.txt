@@ -1,0 +1,11 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 10/4/2017
+Sprint 3
+Reviewed File: StarMario.cs
+Author of File: Sean Zhang/Caleb Lehman (Sean Zhang started implementation, Caleb finished)
+Minutes Taken: ~5
+
+Comments:
+StarMario is not always very readable. Some parts make sense and are readable, such as the majority of methods, which just call the corresponding method in decoratedMario.
+However, other parts are harder to understand, such as why StarMario has properties like XPosition and YPosition that never get used. Overall, this class needs refactored, but
+many of its issues in readability and simplicity stem from design issues with IMario, so that will also have to be refactored.

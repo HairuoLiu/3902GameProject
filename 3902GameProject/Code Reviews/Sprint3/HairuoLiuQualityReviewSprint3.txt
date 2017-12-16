@@ -1,0 +1,17 @@
+﻿Author: HairuoLiu
+Date: 10/8/2017
+Sprint Number: 3
+File being Reviewed: LeftWalkingGoombaState.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+There are not many superflous lines and the code is clean really easy to understand.
+The problem I think I found before was a mistake. After I try to delete it I find it will not work because is like the main code in the file. Even if it is empty but we still need to keep it. I think there is no problem with ChangeMovementToLeft().
+
+
+Hypothetical Change:
+
+If we only build some small game. The mothed like ChangeMovementToRight() will help a lot if time because different enemy can use the same mothed. 
+There will be some problem. If we want to build some big game in the future. If we want enemies move in different speeds, in different way or when player coming change the size. It will be hard to change. Because the way like this can only handle the same movement.

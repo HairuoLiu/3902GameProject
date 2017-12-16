@@ -1,0 +1,21 @@
+﻿Author: Tennison Gray
+Date: 10/4/2017
+Sprint Number: 4
+File being Reviewed: ObjectPhysics.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are not many superflous lines, are unneeding variabales.
+The initial problem I first viewed when reviewing this and when infact trying to use it and th einterface it uses, 
+it must include the dampen method. Which makes sense for the mario movement but makes less sense for items and other 
+classes that would also like to use the physics interface and or this class.
+
+Hypothetical Change:
+
+I would change this then so as to not have the interface have the methods for dampen speed and variables that items 
+and enemies would not need so as to allow them to inherit from this interface and still benifit from using a physics 
+class and allowing for cleaner code. Right now we handle he physics of all things differently. Ie. Items have their 
+own, enemies have their own, and mario has this. By making the interface less restricting and allowing other classes 
+to use it easily it would unify the way physics works and would allow for cleaner easier to follow, higher quality code.

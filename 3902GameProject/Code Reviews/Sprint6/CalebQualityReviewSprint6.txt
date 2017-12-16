@@ -1,0 +1,19 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 12/5/2017
+Sprint 6
+Reviewed File: Mario.cs (edited by Sean Zhang)
+Author of File: Sean Zhang
+Minutes Taken: ~5
+
+Specific Comments on Code Quality:
+
+The code is of high quality. It is fairly cohesive; the class is responsible for calling methods to change mario, but the various
+implementation details are for the most part left for other classes to do (ObjectPhysics, MarioActionState, MarioState, etc.). The coupling is also
+reasonably low, since Mario only depends on classes/interfaces that are necessarily mario/object-based (IObjectPhysics, IMarioState, etc.).
+
+Hypothetical Change:
+
+We (or someone) may want to extend the functionality of mario, say to add more states (swimming maybe?). Most of the state-dependent work is
+handled by the IState field. This means that probably one method would needed to be added to the IState interface (IsSwimming()), and some physics
+logic might have to be changed depending on the return value in IObjectPhysics or MarioActionState, but it would not require many changes in the
+Mario class.

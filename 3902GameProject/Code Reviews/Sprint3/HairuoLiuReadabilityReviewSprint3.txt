@@ -1,0 +1,11 @@
+﻿Author: HairuoLiu
+Date: 10/4/2017
+Sprint Number: 3
+File being Reviewed: CollisionGeneral.cs
+Author of File: Tennison Gray
+Minutes Taken: ~10
+
+Comments:
+The code is easy understand and the names is follow c# naming convention.I think everyone can understand and follow the project. goombaInstance is the instance of the game when we need a walking goomba it will run.
+Each function in the file like ChangeMovementToRight(), MakeDead() uses sensible names thich follow c# naming convention.
+One small problem I think for the "public void ChangeMovementToLeft()" we already move left so we do not need that.

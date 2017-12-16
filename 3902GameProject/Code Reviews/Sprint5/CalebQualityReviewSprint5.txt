@@ -1,0 +1,17 @@
+﻿Author: Caleb Lehman (lehman.346@osu.edu)
+Date: 11/13/2017
+Sprint 5
+Reviewed File: HeadsUp.cs
+Author of File: Sean Zhang
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code is of reasonably high quality. It is all very cohesive; it only deals with positioning and displaying the heads up display.
+The only dependencies are on the Game1 class, the IMario interface, and the ICamera interface. This is a reasonably low amount of dependencies, but it could be
+reduced so that the scorekeeper was passed in, instead of the whole mario.
+
+Hypothetical Change:
+
+In the event that we add multiplayer, we would need to refactor scoring out of the mario classes/interfaces and into the Game1 class. This would mean in the
+HeadsUp code, changing the lines that get scorekeeper from mario, to get scorekeeper from the GameInstance. This would be a fairly easy change.

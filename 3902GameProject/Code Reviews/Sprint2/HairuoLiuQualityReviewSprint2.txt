@@ -1,0 +1,20 @@
+Author: HairuoLiu
+Date: 9/25/2017
+Sprint Number: 2
+File being Reviewed: ItemSpriteFactory.cs
+Author of File: Tennison Gray
+Minutes Taken: ~15
+
+Comments:
+I think he did a good job on code quality part. All the variables defined are used.
+For example the name of the Texture2D is "itemSpriteSheet" which is camel and for class such as "ItemSpriteFactory()" which is pascal. 
+Also the other function like "CreateCoin()", "CreateBigMushroom()","CreateStar()".
+All in all, all the code appears to be clean and well.
+
+
+Hypothetical Change
+If we want to change and create more items. 
+One thing may need improves which is the return value. 
+For all "Interfaces.IItem" Create function.
+We can use some way instead of return the fuction like "return new FireFlower(x, y, itemSpriteSheet);",
+but use the "itemCreate = new FireFlower(x, y, itemSpriteSheet)" and "return itemCreate". 

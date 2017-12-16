@@ -1,0 +1,21 @@
+﻿Author: Tennison Gray
+Date: 9/25/2017
+Sprint Number: 2
+File being Reviewed: GenericMarioSprite.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~15
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are no superflous lines, are unneeding vairbales.
+The initial problem I first viewed when reviewing this code was the use of fields instead of properties. 
+But that has been fixed with the refactoring that Group 2 did. Over all the quality appears very high.
+
+Hypothetical Change:
+
+Let us say we no longer are using Mario as the only sprite a player can be and now the player can 
+choose what sprite they want to be. How would this handle it? Well apart from a needed name change this 
+generic class could be used by any sprite. When creating it you would just want to load it with the new 
+spritesheet such that it would now handle the new character. This would then be followed by a name change 
+to genericPlayerSprite is the coders wanted. Though one could still keep all the sprites seperated. 
+The code would handle both.

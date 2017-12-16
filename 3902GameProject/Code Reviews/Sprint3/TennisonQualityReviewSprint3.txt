@@ -1,0 +1,20 @@
+﻿Author: Tennison Gray
+Date: 10/4/2017
+Sprint Number: 2
+File being Reviewed: MouseController.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Specific Comments on Code Quality:
+
+The code appears to be clean and well written. There are not many superflous lines, are unneeding variabales.
+The initial problem I first viewed when reviewing this was the commented out lines as well as some lines that seem repetitive such as the commented lines which
+should be removed. But that has been fixed with the refactoring that Group 2 did. Over all the quality appears very high.
+
+Hypothetical Change:
+
+Let us say we no longer are using a mouse controller, then it would easy to remove this code and the game would be very
+uneffected, now let us say we need to add more abilities to the mouse controller, such as button clicks and wheel toggles.
+This would also not be difficult since it would just follow the other controllers and group 2 would be able to add features
+just like they did with the other controllers. Needless to say, whatever the change to the game, the easability to change the
+mouse controller will be incredibly high.

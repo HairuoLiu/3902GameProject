@@ -1,0 +1,15 @@
+﻿Author: Tennison Gray
+Date: 10/4/2017
+Sprint Number: 2
+File being Reviewed: MouseController.cs
+Author of File: Caleb Lehman
+Minutes Taken: ~10
+
+Comments:
+
+The code uses sensible names that follow c# naming convention as well as the the naming conventions we use in the other classes in the project. 
+For instance gameInstance is the instance of the game being run and used by this controller. The same is true for method names, they follow c# convention 
+and make sense to the reader. Over all the code is very easy to follow and understand for someone new to the project. Also, thanks to the use of the IController,
+it is very similar to the already existing keyboard controller, this makes it even easier for some one on the project to follow.
+One small caveat is that the mouseState variable is recreated on every update, this adds some extra work for the garbage collector those to be fair very 
+little. Maybe instead intialize it in the constructor and update it each time in the update method.

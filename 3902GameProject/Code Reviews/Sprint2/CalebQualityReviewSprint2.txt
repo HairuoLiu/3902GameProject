@@ -1,0 +1,20 @@
+﻿Author: Caleb Lehman
+Date: 9/25/2017
+Sprint Number: 2
+File being Reviewed: LeftCrouchingSmallMarioState.cs
+Author of File: Sean Zhang
+Minutes Taken: ~15
+
+Specific Comments on Code Quality:
+The code follows many of the guidlines given in this class for high quality code. For example, this class fits well in to the state pattern design discussed in class.
+It also restricts itself to only methods that alter mario's state, so the class has high cohesion. Furthermore, the class is very simple (each method is 1-2 lines) and readable.
+Finally, the class depends only on IMarioState, PlayerSpriteFactory, and the Mario class. The dependencies on IMarioState and PlayerSpriteFactory are both fairly loose, since
+the former is an interface and it only uses the "CreateLeftCrouchingSmallMarioState()" method from the latter. The dependency on the Mario class (specifically, the state field)
+is a bit more concrete, but overall, I would say this class has sufficiently low coupling.
+
+Hypothetical Change:
+It is very likely that the state transition methods (CrouchToIdleToJump(), MakeSmall(), etc.) will be changed moving forward with this project and away from the very specific
+key mappings of this sprint. This would require renaming methods or deleting methods and creating new ones, depending on how the IMarioState inteface changes.
+However, this seems unavoidable, since the methods in the state classes depend fairly strongly on what sort of transitions are allowed. Furthermore, any new methods would
+be just as short and easily written/understood as the current methods. Overall, while changing this state class (and all of the other mario state classes) may be tedious for
+future changes, it will most likely be easy changes and will not require redesigning the structure of how Mario's states have been implemented.
